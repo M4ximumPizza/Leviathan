@@ -117,7 +117,7 @@ public class Main {
         Instruction instruction = instructionMap.get(instructionName);
 
         //FIXME: Operands are not being printed because they are being classified as invalid instructions.
-        // They are not instructions but operands and I need to figure out how to handle them.
+        // They are not instructions but operands and I need to figure out how to handle them. This is super broken.
         if (instruction == null) {
             throw new RuntimeException("Unknown instruction: " + instructionName);
         }
